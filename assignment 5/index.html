@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+  
+    #register-form{
+        display:none;
+    }
+</style>
+  <body>
+    
+      <div class="container">
+          <h1 class="text-center">
+              Login Page
+          </h1>
+          <div class="row">
+              <div class="col-md-6 text-center m-auto">
+                    <div class="card m-6">
+                        <div class="card-body">
+                            <button class="btn btn-primary btn-lg " id ="register">
+                                Register
+                            </button>
+                            <button class="btn btn-primary btn-lg" id="login">
+                             Login
+                            </button>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 m-auto">
+                    <div class="card" id="login-form" onsubmit="return login.validate()">
+                        <div class="card-body">
+                        <form action="" >
+                            <h1>
+                                Login Form
+                            </h1>
+                            <input type="text" placeholder="Login Username" id="uname" class="form-control m-3">
+                            <input type="password" placeholder="Login Password" id="pass" class="form-control m-3">
+                            
+                            <button class="btn btn-primary m-3" > Submit </button>
+                        </form>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                  <div class="card" id="register-form">
+                      <div class="card-body">
+                      <form action="" onsubmit="return register.validate()">
+                          <h1>
+                              Register Form
+                          </h1>
+                          <input type="text" placeholder="Username" id="fname" class="form-control m-3">
+                          <input type="email" placeholder="Email" id="email" class="form-control m-3">
+                          <input type="password" placeholder="Password" id="pass1" class="form-control m-3">
+                          <input type="password" placeholder="Confrim Password" id="pass2" class="form-control m-3">
+                          
+                          <button class="btn btn-primary m-3" > Submit </button>
+                      </form>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
