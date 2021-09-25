@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let person = {
+      name : 's'
+    }
+    let runner = {
+    name: 'Runner',
+    run: function(speed) {
+        console.log(this.name + ' runs at ' + speed + ' mph.');
+    }
+};
+let flyer = {
+    name: 'Flyer',
+    fly: function(speed) {
+        console.log(this.name + ' flies at ' + speed + ' mph.');
+    }
+};
+let run = runner.run.bind(flyer, 20);
+run();
+  </script>
+</body>
+</html>
